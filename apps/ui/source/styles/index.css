@@ -1,0 +1,7 @@
+@import './tailwind.css';
+@import './font.css';
+@import './scrollbar.css';
+
+body {
+    overflow: hidden;
+}
