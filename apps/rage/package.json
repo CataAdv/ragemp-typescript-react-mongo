@@ -1,5 +1,5 @@
 {
-	"name": "arena-urban",
+	"name": "rage",
 	"version": "0.06",
 	"scripts": {
 		"build": "cross-env NODE_ENV=production node esbuild.config.js",
