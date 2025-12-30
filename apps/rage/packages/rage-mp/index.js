@@ -81,8 +81,9 @@ var ServerModule = class {
 };
 
 // src/server/index.ts
+var import_config = require("dotenv/config");
 new ServerModule({
   database: {
-    url: "mongodb://test:parola@localhost:27017/testdb"
+    url: process.env.MONGO_URL || ""
   }
 });

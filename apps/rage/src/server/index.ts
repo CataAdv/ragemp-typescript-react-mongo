@@ -3,7 +3,7 @@
 **/
 
 import { ServerModule } from "./server.module";
-
+import 'dotenv/config';
 
 
 /**
@@ -12,7 +12,6 @@ import { ServerModule } from "./server.module";
 
 new ServerModule({
     database: {
-        url: "mongodb://test:parola@localhost:27017/testdb"
+        url: process.env.MONGO_URL || ""
     }
 });
-
